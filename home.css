@@ -54,17 +54,14 @@ header{
    background-color:  hsl(218, 6%, 49%);;
     
 }
-footer{
-    
-    color: rgb(255, 255, 255);
-}
-#body{
-background-color: white;
+
+body{
+margin-bottom: 900px;
    
 
 }
 #footer-tag{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     
 }
 #footer-tag:hover{
@@ -150,7 +147,6 @@ main{
 
     display: grid; 
 
-    height: 300px; 
 
     grid-template-areas: "head head" 
 
@@ -162,7 +158,16 @@ main{
 
     grid-template-columns: 150px 1fr; 
 
-   
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    max-height: 45px;
+    overflow:hidden;
+    margin-top: 30px;
+    background-color: hsla(0, 91%, 46%, 0.786);
+    color: white;
 
   } 
 
@@ -283,21 +288,8 @@ video{
     margin-top: 10px;
     margin-bottom: 200px;
 }
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 50px;
-    text-align: center;
-    max-height: 45px;
-    overflow:hidden;
-    margin-top: 30px;
-    background-color: hsla(0, 91%, 46%, 0.786);
-    color: white;
-  }
+
   .flex-container{
     margin-bottom: 100px;
+    padding-bottom: 100px;
   }
-#footer-tag{
-    color: white;
-}
