@@ -56,7 +56,7 @@ header{
 }
 footer{
     
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 #body{
 background-color: white;
@@ -252,8 +252,10 @@ h4{
 }
 strong{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(222, 204, 204);
-    color:rgb(0, 0, 0);
+    background-color: rgb(205, 25, 25);
+    color:hsl(0, 0%, 100%);
+    max-width: 100%;
+    margin:2px
 }
 button{
     border-radius: 24px;
@@ -277,6 +279,25 @@ a{
     ;margin:5px
 }
 video{
-    min-width: 100%;
+    min-width: 50%;
+    margin-top: 10px;
+    margin-bottom: 200px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    max-height: 45px;
+    overflow:hidden;
     margin-top: 30px;
+    background-color: hsla(0, 91%, 46%, 0.786);
+    color: white;
+  }
+  .flex-container{
+    margin-bottom: 100px;
+  }
+#footer-tag{
+    color: white;
 }

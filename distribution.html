@@ -37,7 +37,7 @@
                 <header>
                     <nav class="nav">
                         <a id="a" style="color:hsl(0, 100%, 50%)" href="/home.html">Home</a>
-                        <a id="a" style="color:hsl(0, 0%, 100%)" href="/distribution.html">Distribution</a>
+                        <a id="a" style="color:hsl(0, 0%, 0%)" href="/distribution.html">Distribution</a>
                         <a id="a" style="color:hsl(0, 100%, 50%)">Marketing</a>
                         <a id="a" style="color:hsl(0, 100%, 50%)">Technical Docs</a>
                         <a id="a" style="color:hsl(0, 100%, 50%)">About Us</a>
@@ -133,6 +133,49 @@ As the popularity of OTT services continues to grow, we can expect to see more c
                         <div class="container">
                             <h1>Pipeline</h1>
                         </div>
+                        <div class="container">
+                            <p>
+                                Linear television channels have been a cornerstone of the broadcast industry for decades. With the advent of modern broadcasting technologies, including digital signal processing, cloud computing, and high-speed internet, the delivery of linear TV channels has undergone significant changes. AWS Elemental Live is a cloud-based video processing and delivery service that allows broadcasters to deliver high-quality linear TV channels to viewers around the world. In this article, we will explore the pipeline architecture and components of a linear television channel using AWS Elemental Live, designed in accordance with the standards required by Applesoft Distribution built on top of Amazon Web Services.</p><br>
+</div>
+
+<div class="container">
+    <p>The pipeline architecture of a linear television channel using AWS Elemental Live consists of three main stages: ingest, processing, and delivery. Each stage is responsible for a specific set of tasks, and together, they ensure the smooth delivery of video content to viewers.<br>
+
+        <strong>Ingest Stage</strong><br>
+        The ingest stage is the first stage of the pipeline and is responsible for acquiring the video content from the source. The source can be a live event or pre-recorded content. In the case of live events, AWS Elemental Live can receive the video content directly from the camera via an IP connection. For pre-recorded content, the video files are uploaded to AWS S3, which serves as the storage solution for the content.<br>
+    
+        <strong>Processing Stage</strong><br>
+        The processing stage is where the video content is transformed into the format required for broadcast. AWS Elemental Live performs a wide range of processing tasks, including video transcoding, audio encoding, and closed captioning. The transcoding process converts the video content into multiple bitrates, resolutions, and formats, allowing viewers to watch the content on various devices. The audio encoding process ensures that the audio quality is optimized for different devices and network conditions. The closed captioning process adds captions to the video content, ensuring accessibility for viewers who are hearing impaired.<br>
+    
+        <strong>Delivery Stage</strong><br>
+        The delivery stage is where the processed video content is delivered to viewers. AWS Elemental Live supports a range of delivery protocols, including HTTP Live Streaming (HLS), Dynamic Adaptive Streaming over HTTP (DASH), and Smooth Streaming. These protocols ensure that the video content can be delivered to viewers on different devices, including smartphones, tablets, smart TVs, and computers.<br>
+    
+    <strong>Components of a Linear Television Channel using AWS Elemental Live</strong><br>
+    The components of a linear television channel using AWS Elemental Live can be broadly classified into three categories: video processing components, storage components, and delivery components.<br>
+       <strong>Video Processing Components</strong><br>
+        <strong>The video processing components of a linear television channel using AWS Elemental Live include the following:</strong><br>
+    
+        AWS Elemental Live Encoder: This component is responsible for video transcoding and audio encoding.<br>
+        AWS Elemental Live Producer: This component is responsible for adding graphics and logos to the video content.<br>
+        AWS Elemental Live Statmux: This component is responsible for optimizing the video stream by combining multiple video bitrates into a single stream.<br>
+        AWS Elemental Live Caption: This component is responsible for adding closed captions to the video content.<br>
+    
+       <strong>Storage Components</strong><br>
+        The storage components of a linear television channel using AWS Elemental Live include the following:<br>
+        The primary storage solution for the video content is s3.<br>
+      
+       The is a low-cost storage solution used for archiving video content is Glacier.<br>
+    
+       <strong>Delivery Components</strong><br>
+        The delivery components of a linear television channel using AWS Elemental Live include the following:<br>
+    
+        <strong>Amazon CloudFront:</strong><br> This component is responsible for delivering the video content to viewers using a content delivery network (CDN).<br>
+        <strong>Amazon Route 53:</strong><br> This component is responsible for domain name system (DNS) management and routing traffic to the appropriate CDN server.<br>
+       <strong>AWS Elemental MediaLive:</strong><br> This component is responsible for managing the live channel workflow, including ingesting the video content and delivering it to viewers.<br>
+
+
+</div>
+                        </div>
                         </div>
                         
                         
@@ -148,7 +191,7 @@ As the popularity of OTT services continues to grow, we can expect to see more c
         
 
     </body>
-    <footer style="text-align: center;padding-top: 520px;">
+    <footer >
         <div> 
          <small>&copy 2023 <a id="footer-tag">applesoft</a></small> 
         </div>
