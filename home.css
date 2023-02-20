@@ -5,7 +5,7 @@ header{
     min-width: 45%;
     max-height: 150px;
     display: flex;
-    box-shadow:10px 10px 5px 12px #91838330;
+    box-shadow:5px 5px 5px 6px #91838330, 5px 5px 26px 3px red ;
   
 }
 #toplogo{
@@ -27,6 +27,8 @@ header{
     border-top-width:5px;
     border-top-style: solid;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1000;
+    font-size: larger;
 }
 .flex-container{
     margin-bottom: 25px;
@@ -124,6 +126,7 @@ fieldset{
     border-radius: 20px;
     cursor: pointer;
     overflow: hidden;
+    margin-top: 300px;
 }
 input{
     border-width: thin;
@@ -306,9 +309,6 @@ video{
     color: #000000;
     margin-top: 100px;
 }
-input::shadow{
-    margin-top: 300px;
-}
-input[search]{
+input.search{
     margin-top: 300px;
 }
